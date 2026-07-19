@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomerWindow</class>
+ <widget class="QMainWindow" name="CustomerWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>820</width><height>580</height></rect>
+  </property>
+  <property name="windowTitle"><string>Customer Window</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+
+    <!-- LEFT: Menu panel -->
+    <item>
+     <layout class="QVBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>Menu</string></property></widget></item>
+      <item>
+       <widget class="QLineEdit" name="searchEdit">
+        <property name="placeholderText"><string>Search by name or category...</string></property>
+       </widget>
+      </item>
+      <item><widget class="QListWidget" name="menuList"/></item>
+      <item>
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QPushButton" name="sortByPriceBtn">
+          <property name="text"><string>Sort by Price</string></property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="sortByCategoryBtn">
+          <property name="text"><string>Sort by Category</string></property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addToCartBtn">
+        <property name="text"><string>Add to Cart</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <!-- RIGHT: Cart panel -->
+    <item>
+     <layout class="QVBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>My Cart</string></property></widget></item>
+      <item><widget class="QListWidget" name="cartList"/></item>
+      <item>
+       <widget class="QPushButton" name="removeFromCartBtn">
+        <property name="text"><string>Remove Selected</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="subtotalLabel">
+        <property name="text"><string>Subtotal: Rs.0.00</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="placeOrderBtn">
+        <property name="text"><string>Place Order</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="viewOrdersBtn">
+        <property name="text"><string>View My Orders</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+</ui>

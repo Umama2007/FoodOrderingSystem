@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QMainWindow" name="LoginWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>480</width><height>420</height></rect>
+  </property>
+  <property name="windowTitle"><string>Food Ordering System</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+    <item>
+     <layout class="QHBoxLayout">
+      <item><spacer><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+      <item>
+       <layout class="QVBoxLayout">
+        <item><spacer><property name="orientation"><enum>Qt::Vertical</enum></property></spacer></item>
+        <item>
+         <widget class="QFrame" name="loginCard">
+          <property name="objectName"><string>loginCard</string></property>
+          <layout class="QVBoxLayout">
+           <item><widget class="QLabel" name="loginTitle"><property name="text"><string>🍔 FoodOrder</string></property><property name="objectName"><string>loginTitle</string></property></widget></item>
+           <item><widget class="QLabel" name="loginSub"><property name="text"><string>Sign in to continue</string></property><property name="objectName"><string>loginSub</string></property></widget></item>
+           <item><widget class="QLabel"><property name="text"><string>Username</string></property></widget></item>
+           <item><widget class="QLineEdit" name="usernameEdit"><property name="objectName"><string>loginInput</string></property><property name="placeholderText"><string>Enter your username</string></property></widget></item>
+           <item><widget class="QLabel"><property name="text"><string>Password</string></property></widget></item>
+           <item><widget class="QLineEdit" name="passwordEdit"><property name="objectName"><string>loginInput</string></property><property name="echoMode"><enum>QLineEdit::Password</enum></property><property name="placeholderText"><string>Enter your password</string></property></widget></item>
+           <item><widget class="QPushButton" name="loginBtn"><property name="text"><string>Login</string></property><property name="objectName"><string>loginBtn</string></property></widget></item>
+           <item><widget class="QPushButton" name="registerBtn"><property name="text"><string>Create New Account</string></property><property name="objectName"><string>registerBtn</string></property></widget></item>
+          </layout>
+         </widget>
+        </item>
+        <item><spacer><property name="orientation"><enum>Qt::Vertical</enum></property></spacer></item>
+       </layout>
+      </item>
+      <item><spacer><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</ui>

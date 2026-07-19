@@ -1,0 +1,243 @@
+QMainWindow, QWidget {
+    background-color: #f5f7fa;
+    font-family: Segoe UI;
+    font-size: 14px;
+    color: #1a1a2e;
+}
+
+/* ── Navbar ── */
+#navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 8px 20px;
+}
+#logoLabel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0096b4;
+}
+#navBtn {
+    background: transparent;
+    border: none;
+    color: #555;
+    font-size: 14px;
+    padding: 6px 14px;
+}
+#navBtn:hover { color: #0096b4; }
+#navBtn:checked {
+    color: #0096b4;
+    border-bottom: 2px solid #0096b4;
+    font-weight: bold;
+}
+
+/* ── Welcome ── */
+#welcomeLabel {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1a1a2e;
+    padding: 16px 20px 4px 20px;
+}
+#welcomeSub {
+    font-size: 13px;
+    color: #777;
+    padding: 0 20px 12px 20px;
+}
+
+/* ── Category pills ── */
+#catBtn {
+    background-color: #e8f4f8;
+    border: none;
+    border-radius: 16px;
+    padding: 6px 16px;
+    color: #0096b4;
+    font-weight: bold;
+}
+#catBtn:checked, #catBtn:hover {
+    background-color: #0096b4;
+    color: white;
+}
+
+/* ── Search bar ── */
+#searchBar {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: white;
+    font-size: 13px;
+}
+#searchBar:focus { border-color: #0096b4; }
+
+/* ── Food Card ── */
+#foodCard {
+    background-color: white;
+    border-radius: 14px;
+    border: 1px solid #ebebeb;
+}
+#foodCard:hover { border-color: #0096b4; }
+#foodImageBox {
+    border-radius: 10px 10px 0 0;
+    min-height: 110px;
+}
+#foodName {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1a1a2e;
+    padding: 6px 10px 0 10px;
+}
+#foodPrice {
+    font-size: 13px;
+    color: #0096b4;
+    font-weight: bold;
+    padding: 0 10px;
+}
+#addCartBtn {
+    background-color: #0096b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 6px 10px 10px 10px;
+    font-weight: bold;
+}
+#addCartBtn:hover { background-color: #007a94; }
+
+/* ── Cart Panel ── */
+#cartPanel {
+    background-color: white;
+    border-left: 1px solid #e0e0e0;
+    min-width: 260px;
+    max-width: 280px;
+}
+#cartTitle {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+    color: #1a1a2e;
+    border-bottom: 1px solid #eee;
+}
+#cartItemWidget {
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin: 4px 12px;
+    padding: 6px 10px;
+}
+#cartItemName { font-size: 13px; font-weight: bold; }
+#cartItemPrice { font-size: 12px; color: #0096b4; }
+#removeBtn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    min-width: 22px;
+    max-width: 22px;
+    min-height: 22px;
+    max-height: 22px;
+    font-weight: bold;
+}
+#subtotalArea {
+    border-top: 1px solid #eee;
+    padding: 12px 16px 4px 16px;
+}
+#subtotalLabel { font-size: 13px; color: #555; }
+#subtotalValue { font-size: 13px; font-weight: bold; }
+#taxLabel { font-size: 12px; color: #aaa; }
+#placeOrderBtn {
+    background-color: #0096b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 16px;
+}
+#placeOrderBtn:hover { background-color: #007a94; }
+#viewOrdersBtn {
+    background-color: transparent;
+    color: #0096b4;
+    border: 1px solid #0096b4;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 0 16px 16px 16px;
+    font-weight: bold;
+}
+#viewOrdersBtn:hover { background-color: #e8f4f8; }
+
+/* ── Login ── */
+#loginCard {
+    background: white;
+    border-radius: 18px;
+    padding: 40px;
+    max-width: 380px;
+}
+#loginTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0096b4;
+    margin-bottom: 6px;
+}
+#loginSub { font-size: 13px; color: #888; margin-bottom: 20px; }
+#loginInput {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+#loginInput:focus { border-color: #0096b4; background: white; }
+#loginBtn {
+    background-color: #0096b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#loginBtn:hover { background-color: #007a94; }
+#registerBtn {
+    background: transparent;
+    color: #0096b4;
+    border: 1px solid #0096b4;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#registerBtn:hover { background-color: #e8f4f8; }
+
+/* ── Admin Panel ── */
+#adminCard {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #ebebeb;
+    padding: 16px;
+    margin: 8px;
+}
+#adminMenuList {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: white;
+    padding: 4px;
+}
+#adminMenuList::item { padding: 10px; border-radius: 6px; }
+#adminMenuList::item:selected { background-color: #e8f4f8; color: #0096b4; }
+#adminActionBtn {
+    background-color: #0096b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: bold;
+}
+#adminActionBtn:hover { background-color: #007a94; }
+#adminDeleteBtn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: bold;
+}
+#adminDeleteBtn:hover { background-color: #cc0000; }
